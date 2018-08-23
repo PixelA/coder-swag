@@ -13,30 +13,30 @@
         <!--CODER SWAG-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CatergoriesVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CategoriesVC" customModule="coder_swag" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop by Catergory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmh-tt-Blz">
-                                <rect key="frame" x="10" y="30" width="143" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop by Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmh-tt-Blz">
+                                <rect key="frame" x="10" y="30" width="138" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x3b-z1-f25">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x3b-z1-f25">
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="OBg-uF-qvc" customClass="CatergoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="120" id="OBg-uF-qvc" userLabel="Category Cell" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OBg-uF-qvc" id="e2w-qD-ntI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="XkB-oP-PVO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="113.5"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ijF-Au-dHi">
                                                     <rect key="frame" x="82" y="51" width="211" height="18"/>
@@ -55,17 +55,17 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="XkB-oP-PVO" firstAttribute="top" secondItem="e2w-qD-ntI" secondAttribute="top" id="0Jb-Dt-tjX"/>
+                                                <constraint firstItem="XkB-oP-PVO" firstAttribute="top" secondItem="e2w-qD-ntI" secondAttribute="top" constant="3" id="5M4-zg-q5D"/>
+                                                <constraint firstAttribute="bottom" secondItem="XkB-oP-PVO" secondAttribute="bottom" constant="3" id="Hhg-pK-FyW"/>
                                                 <constraint firstItem="ijF-Au-dHi" firstAttribute="centerY" secondItem="e2w-qD-ntI" secondAttribute="centerY" id="IxL-gD-gSI"/>
                                                 <constraint firstItem="ijF-Au-dHi" firstAttribute="centerX" secondItem="e2w-qD-ntI" secondAttribute="centerX" id="Mpw-SK-h3X"/>
                                                 <constraint firstItem="XkB-oP-PVO" firstAttribute="leading" secondItem="e2w-qD-ntI" secondAttribute="leading" id="jHg-jT-oMZ"/>
-                                                <constraint firstAttribute="bottom" secondItem="XkB-oP-PVO" secondAttribute="bottom" id="pPc-YG-nWv"/>
                                                 <constraint firstAttribute="trailing" secondItem="XkB-oP-PVO" secondAttribute="trailing" id="tTo-Kr-ctO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="catergoryImage" destination="XkB-oP-PVO" id="w0A-xC-mhL"/>
-                                            <outlet property="catergoryTitle" destination="4aK-EV-ueb" id="SXD-TF-9QY"/>
+                                            <outlet property="categoryImage" destination="XkB-oP-PVO" id="gl6-ma-j5H"/>
+                                            <outlet property="categoryTitle" destination="4aK-EV-ueb" id="XmX-72-6Ym"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -84,7 +84,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="fhF-8J-rQd"/>
                     <connections>
-                        <outlet property="catergoryTable" destination="x3b-z1-f25" id="OUT-Hu-9OG"/>
+                        <outlet property="categoryTable" destination="x3b-z1-f25" id="dj6-di-oGo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

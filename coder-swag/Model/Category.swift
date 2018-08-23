@@ -1,5 +1,5 @@
 //
-//  Catergory.swift
+//  Category.swift
 //  coder-swag
 //
 //  Created by Asherlee Levy on 8/22/18.
