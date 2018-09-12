@@ -16,5 +16,6 @@ struct Product {
         self.title = title
         self.imageName = imageName
         self.price = price
+        
     }
 }
