@@ -25,6 +25,7 @@
 		A9BA48D221275F1200494815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BA48D021275F1200494815 /* LaunchScreen.storyboard */; };
 		A9BA48DD21275F1300494815 /* coder_swagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA48DC21275F1300494815 /* coder_swagTests.swift */; };
 		A9BA48E821275F1300494815 /* coder_swagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA48E721275F1300494815 /* coder_swagUITests.swift */; };
+		A9C6FC4521534F6F00A8571B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C6FC4421534F6F00A8571B /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		A9BA48E321275F1300494815 /* coder-swagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coder-swagUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA48E721275F1300494815 /* coder_swagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coder_swagUITests.swift; sourceTree = "<group>"; };
 		A9BA48E921275F1300494815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9C6FC4421534F6F00A8571B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				A9291C312127ED2000895D3C /* CategoryCell.swift */,
+				A9C6FC4421534F6F00A8571B /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				A975CD1A212DC61F00F55D71 /* Category.swift in Sources */,
 				A9291C322127ED2000895D3C /* CategoryCell.swift in Sources */,
 				A9AEBAE7214C7AD60084F605 /* ProductsVC.swift in Sources */,
+				A9C6FC4521534F6F00A8571B /* ProductCell.swift in Sources */,
 				A975CD1F212DCA6300F55D71 /* DataService.swift in Sources */,
 				A9ABFB05213E404700979E73 /* Product.swift in Sources */,
 			);

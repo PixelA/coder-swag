@@ -13,7 +13,7 @@
         <!--CODER SWAG-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CategoriesVC" customModule="coder_swag" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CategoriesVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,44 +28,39 @@
                                 <rect key="frame" x="0.0" y="69.5" width="375" height="533.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="120" id="OBg-uF-qvc" userLabel="Category Cell" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="151" id="OBg-uF-qvc" userLabel="Category Cell" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OBg-uF-qvc" id="e2w-qD-ntI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="XkB-oP-PVO">
-                                                    <rect key="frame" x="0.0" y="3" width="375" height="113.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="XkB-oP-PVO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ijF-Au-dHi">
-                                                    <rect key="frame" x="82" y="51" width="211" height="18"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aK-EV-ueb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="211" height="18"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="211" id="HFk-lU-SMA"/>
-                                                                <constraint firstAttribute="height" constant="18" id="MxX-vQ-a0b"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aK-EV-ueb">
+                                                    <rect key="frame" x="82" y="66.5" width="211" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="211" id="HFk-lU-SMA"/>
+                                                        <constraint firstAttribute="height" constant="18" id="MxX-vQ-a0b"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="XkB-oP-PVO" firstAttribute="top" secondItem="e2w-qD-ntI" secondAttribute="top" constant="3" id="5M4-zg-q5D"/>
-                                                <constraint firstAttribute="bottom" secondItem="XkB-oP-PVO" secondAttribute="bottom" constant="3" id="Hhg-pK-FyW"/>
-                                                <constraint firstItem="ijF-Au-dHi" firstAttribute="centerY" secondItem="e2w-qD-ntI" secondAttribute="centerY" id="IxL-gD-gSI"/>
-                                                <constraint firstItem="ijF-Au-dHi" firstAttribute="centerX" secondItem="e2w-qD-ntI" secondAttribute="centerX" id="Mpw-SK-h3X"/>
-                                                <constraint firstItem="XkB-oP-PVO" firstAttribute="leading" secondItem="e2w-qD-ntI" secondAttribute="leading" id="jHg-jT-oMZ"/>
-                                                <constraint firstAttribute="trailing" secondItem="XkB-oP-PVO" secondAttribute="trailing" id="tTo-Kr-ctO"/>
+                                                <constraint firstAttribute="trailing" secondItem="XkB-oP-PVO" secondAttribute="trailing" id="JUN-bC-aoh"/>
+                                                <constraint firstAttribute="bottom" secondItem="XkB-oP-PVO" secondAttribute="bottom" id="Y7E-Q8-dcO"/>
+                                                <constraint firstItem="4aK-EV-ueb" firstAttribute="centerX" secondItem="e2w-qD-ntI" secondAttribute="centerX" id="gfo-et-qE3"/>
+                                                <constraint firstItem="XkB-oP-PVO" firstAttribute="top" secondItem="e2w-qD-ntI" secondAttribute="top" id="lwr-Tm-MrS"/>
+                                                <constraint firstItem="4aK-EV-ueb" firstAttribute="centerY" secondItem="e2w-qD-ntI" secondAttribute="centerY" id="obV-Bp-F5Q"/>
+                                                <constraint firstItem="XkB-oP-PVO" firstAttribute="leading" secondItem="e2w-qD-ntI" secondAttribute="leading" id="x5Z-7K-xPV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImage" destination="XkB-oP-PVO" id="gl6-ma-j5H"/>
-                                            <outlet property="categoryTitle" destination="4aK-EV-ueb" id="XmX-72-6Ym"/>
+                                            <outlet property="categoryImage" destination="XkB-oP-PVO" id="ptj-RX-W1E"/>
+                                            <outlet property="categoryTitle" destination="4aK-EV-ueb" id="grI-xH-x3X"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -116,7 +111,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Bt-yb-ceB">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="4Bt-yb-ceB" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="268"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -157,6 +152,11 @@
                                             <constraint firstAttribute="trailing" secondItem="3Dz-Xf-5zm" secondAttribute="trailing" id="LaB-pm-LuY"/>
                                             <constraint firstItem="3Dz-Xf-5zm" firstAttribute="leading" secondItem="4Bt-yb-ceB" secondAttribute="leading" id="mIG-yN-dzT"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="productImage" destination="3Dz-Xf-5zm" id="hqs-7c-86s"/>
+                                            <outlet property="productPrice" destination="9QA-IP-tBE" id="F3N-BP-iO5"/>
+                                            <outlet property="productTitle" destination="rz7-0K-MeZ" id="pXY-Li-vuP"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -172,6 +172,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j9m-Sf-Sb6"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="iQq-Jt-RO8" id="nEl-ns-GGz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IH3-Qi-ZHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
